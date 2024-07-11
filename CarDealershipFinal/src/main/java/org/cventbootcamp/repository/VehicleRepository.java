@@ -57,10 +57,6 @@ public class VehicleRepository {
     }
 
     public List<Vehicle> getVehiclesByMakeModel(String make, String model) throws SQLException {
-        System.out.println("Testing Testing: ");
-        System.out.println(make);
-        System.out.println(model);
-
         String query = "SELECT * FROM vehicles WHERE make = ? AND model <= ?";
         List<Vehicle> vehicles = new ArrayList<>();
 
